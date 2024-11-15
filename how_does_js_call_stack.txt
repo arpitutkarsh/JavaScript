@@ -1,0 +1,24 @@
+JavaScript Execution Context means how will JavaScript runs and execute a specific file. It runs the programme in two phases. Whenever a code in given to JavaScript a global execution Context is formed
+which is given to this keyword. JavaScript is single threaded. Types of Execution Context
+1. Global Execution Context
+2. Function Execution Context
+3. Eval Execution Context
+
+JavaScript code runs in two phases
+1. Memory Creation Phase also known as Creation Phase
+2. Execution phase
+
+In memory creation phase, memory is allocated to all the variables we have declared
+Example code for understanding
+let val1 = 10
+let val2 = 5
+function addNum(num1, num2){
+    let total = num1 + num2
+    return total
+}
+let result1 = addNum(val1, val2)
+let result2 = addNum(10,2)
+
+FIrstly the code is run under global execution which is allocated inside this keyword, and then in memory phase where all the variables are collected 
+and kept. In memory phase first val1 will go as undefined then val2 will also go as undefined, then add num will go with its defination, then result1 and result2 will go as undefined
+Now we will start the executin phase first val1 will go with value 10 then val2 will go with value 5
